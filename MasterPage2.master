@@ -1,0 +1,109 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;
+        <asp:Image ID="Image1" runat="server" Height="155px" ImageUrl="file:///D:\Online Bookshop System\App_Data\main.bmp"
+            Style="left: -1px; position: absolute; top: -3px" Width="501px" />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <br />
+        <asp:Image ID="Image2" runat="server" ImageUrl="file:///D:\Online Bookshop System\App_Data\header.bmp" Style="left: 500px;
+            position: absolute; top: 0px" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:Panel ID="Panel13" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+            BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 105px; position: absolute;
+            top: 146px" Width="151px">
+            <br />
+            <asp:LinkButton ID="order_button" runat="server" Font-Bold="False" Font-Size="Larger"
+                ForeColor="White" Style="left: 30px; position: relative;
+                top: -11px" OnClick="order_button_Click1">View Order</asp:LinkButton></asp:Panel>
+        <br />
+        &nbsp;
+        <asp:Panel ID="Panel12" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+            BorderStyle="Inset" BorderWidth="1px" Height="44px" Style="left: 0px; position: absolute;
+            top: 146px" Width="104px">
+            <br />
+        </asp:Panel>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:Panel ID="Panel2" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+            BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 393px; position: absolute;
+            top: 147px" Width="151px">
+            <br />
+            <asp:LinkButton ID="updatebook_button" runat="server" Font-Size="Larger" ForeColor="White"
+                Style="left: 20px; position: relative; top: -10px" OnClick="updatebook_button_Click1">Update Price</asp:LinkButton></asp:Panel>
+        &nbsp; &nbsp; &nbsp;
+        <asp:Label ID="sname_label" runat="server" Text="Label" style="left: 817px; position: absolute; top: 124px" Font-Bold="True"></asp:Label>
+        &nbsp;&nbsp;
+        <asp:Panel ID="Panel1" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+            BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 258px; position: absolute;
+            top: 146px" Width="133px">
+            <br />
+            <asp:LinkButton ID="addbook_button" runat="server" Font-Size="Larger" ForeColor="White"
+                Style="left: 28px; position: relative; top: -10px" OnClick="addbook_button_Click1">Add Book</asp:LinkButton></asp:Panel>
+        <asp:LinkButton ID="signoutshop_link" runat="server" style="left: 867px; position: absolute; top: 125px" Font-Bold="True" ForeColor="Navy" OnClick="signoutshop_link_Click" Width="62px">Sign Out</asp:LinkButton>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:Panel ID="Panel6" runat="server" BackColor="LightSkyBlue" Height="36px" Style="left: 0px;
+            position: absolute; top: 186px" Width="1000px">
+            &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="White"
+                Style="position: absolute; top: 5px" Text="Welcome ::  "></asp:Label>
+            <br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="White"
+                Style="left: 0px; position: relative; top: -12px" Text="Label"></asp:Label></asp:Panel>
+        &nbsp;<asp:Panel ID="Panel3" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+            BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 545px; position: absolute;
+            top: 146px" Width="151px">
+            <br />
+            <asp:LinkButton ID="deletebook_button" runat="server" Font-Size="Larger" ForeColor="White"
+                Style="left: 31px; position: relative; top: -9px" OnClick="deletebook_button_Click">Delete Book</asp:LinkButton></asp:Panel>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <asp:Panel ID="Panel4" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+            BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 697px; position: absolute;
+            top: 146px" Width="151px">
+            <br />
+            <asp:LinkButton ID="viewsale_button" runat="server" Font-Size="Larger" ForeColor="White"
+                Style="left: 38px; position: relative; top: -6px" OnClick="viewsale_button_Click1">View Sale</asp:LinkButton></asp:Panel>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:Panel ID="Panel5" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+            BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 849px; position: absolute;
+            top: 147px" Width="151px">
+            <br />
+        </asp:Panel>
+        &nbsp;<br />
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="left: 0px; width: 277px; position: absolute; top: 0px; height: 184px; background-color: white">
+        &nbsp;<asp:Panel ID="Panel1" runat="server" Height="31px" Style="left: 1px; position: relative;
+            top: -10px" Width="42px">
+            <asp:Image ID="Image2" runat="server" ImageUrl="file:///D:\Online Bookshop System\App_Data\main.bmp" Height="129px" Width="522px" style="left: -4px; position: relative; top: -10px" /></asp:Panel>
+        <asp:Image ID="Image1" runat="server" ImageUrl="file:///D:\Online Bookshop System\App_Data\header.bmp" Style="left: 519px;
+            position: absolute; top: 0px" Width="581px" Height="127px" />
+        <asp:Panel ID="Panel2" runat="server" Height="21px" Style="left: 0px; position: relative;
+            top: -8px" Width="964px">
+            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;&nbsp;
+            <asp:Panel ID="Panel10" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+                BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 102px; position: absolute;
+                top: 0px" Width="99px">
+            </asp:Panel>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <asp:LinkButton ID="home" runat="server" Font-Bold="False" Font-Size="Larger" ForeColor="White"
+                Height="21px" Style="left: 127px; position: absolute; top: 11px" Width="46px" OnClick="home_Click">Home</asp:LinkButton>
+            &nbsp;&nbsp;<asp:Panel ID="Panel11" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+                BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 202px; position: absolute;
+                top: 0px" Width="196px">
+                <asp:LinkButton ID="rsbookshop" runat="server" Font-Size="Larger" Font-Underline="True"
+                    ForeColor="White" Height="20px" Style="left: 8px; position: absolute; top: 9px"
+                    Width="168px" OnClick="rsbookshop_Click">Register for Bookshop</asp:LinkButton>
+            </asp:Panel>
+            <asp:Panel ID="Panel13" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+                BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 396px; position: absolute;
+                top: 0px" Width="191px">
+                <asp:LinkButton ID="vrshop" runat="server" Font-Size="Larger" ForeColor="White" OnClick="vrshop_Click"
+                    Style="left: 9px; position: absolute; top: 7px">View Registered Shops</asp:LinkButton>
+            </asp:Panel><asp:Panel ID="Panel8" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+                BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 750px; position: absolute;
+                top: 0px" Width="340px">
+                <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" Font-Size="Small"
+                    ForeColor="Navy" OnClick="LinkButton2_Click" Style="left: -35px; position: absolute;
+                    top: -23px">My Cart</asp:LinkButton>
+                <asp:Image ID="Image3" runat="server" ImageUrl="file:///D:\Online Bookshop System\App_Data\cart1.gif" Style="left: -59px;
+                    position: absolute; top: -24px" />
+            </asp:Panel>
+            <br />
+            &nbsp; &nbsp; &nbsp; <asp:Panel ID="Panel12" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+                BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: -3px; position: absolute;
+                top: 0px" Width="103px">
+                <asp:Panel ID="Panel14" runat="server" BackColor="DodgerBlue" BorderColor="SkyBlue"
+                BorderStyle="Inset" BorderWidth="1px" Height="37px" Style="left: 579px; position: absolute;
+                top: -1px" Width="171px">
+                    <asp:LinkButton ID="featured_link" runat="server" Font-Bold="False" Font-Size="Larger"
+                        ForeColor="White" Style="left: 26px; position: absolute; top: 9px" OnClick="featured_link_Click">Featured Books</asp:LinkButton>
+                    <asp:LinkButton ID="user_register_link" runat="server" Font-Bold="True" Font-Underline="True"
+                        OnClick="user_register_link_Click" Style="left: 230px; position: absolute; top: -22px" Font-Size="Small" ForeColor="Navy">Register</asp:LinkButton>
+                    <asp:LinkButton ID="signin_link" runat="server" Font-Bold="True" Font-Underline="True"
+                        OnClick="signin_link_Click" Style="left: 307px; position: absolute; top: -22px"
+                        Width="49px" Font-Size="Small" ForeColor="Navy">Sign In</asp:LinkButton>
+                    <asp:LinkButton ID="signout_link" runat="server" Font-Bold="True" Font-Underline="True"
+                        OnClick="signout_link_Click" Style="left: 338px; position: absolute; top: -21px"
+                        Visible="False" Width="65px" Font-Size="Small" ForeColor="Navy">Sign Out</asp:LinkButton>
+                    <asp:LinkButton ID="user_link" runat="server" Font-Bold="True" Font-Underline="True"
+                        Style="left: 193px; position: absolute; top: -22px" Visible="False" Font-Size="Small" ForeColor="Navy" OnClick="user_link_Click"></asp:LinkButton>
+                </asp:Panel>
+            </asp:Panel>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        </asp:Panel>
+        <asp:Panel ID="Panel3" runat="server" BackColor="SkyBlue" Height="34px" Style="left: -6px;
+            position: relative; top: -8px" Width="1096px">
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Style="left: 71px; position: relative;
+                top: -6px" Text="Search:" Font-Names="Times New Roman" Width="55px" Font-Size="Larger"></asp:Label>
+            <asp:TextBox ID="search" runat="server" Height="17px" Style="left: 88px; position: relative;
+                top: -4px" Width="225px"></asp:TextBox>
+            &nbsp; &nbsp;<asp:DropDownList ID="list" runat="server" Font-Names="Arial"
+                Height="25px" Style="left: 95px; position: relative; top: -4px" Width="85px">
+                <asp:ListItem>Title</asp:ListItem>
+                <asp:ListItem>Author</asp:ListItem>
+                <asp:ListItem>Publisher</asp:ListItem>
+            </asp:DropDownList>
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:ImageButton ID="go" runat="server" Style="left: 89px; position: relative; top: 3px"
+                Width="45px" Height="25px" ImageUrl="file:///D:\Online Bookshop System\App_Data\80102,1180410649,1_12_02.gif" OnClick="go_Click" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <asp:ImageButton ID="advnsrch" runat="server" Style="left: -8px; position: relative;
+                top: 3px" ImageUrl="file:///D:\Online Bookshop System\App_Data\80102,1180410649,1_12_02 (1).gif" OnClick="advnsrch_Click" Height="27px" Width="165px" /></asp:Panel>
+        <br />
+        <asp:Panel ID="Panel4" runat="server" BorderColor="Navy" BorderStyle="Solid" Height="106px"
+            Style="left: 3px; position: relative; top: -24px" Width="152px" BorderWidth="1px" BackColor="AliceBlue">
+            <asp:Panel ID="Panel5" runat="server" BackColor="SkyBlue" Height="27px" Style="left: 0px;
+                position: relative; top: 0px" Width="162px" BorderColor="SkyBlue" BorderStyle="Solid" BorderWidth="1px">
+                &nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="Label2" runat="server" BorderColor="#000040"
+                    Font-Bold="True" Font-Names="Arial" Font-Size="Smaller" ForeColor="White" Style="left: 13px;
+                    position: relative; top: 3px" Text="Browse By"></asp:Label></asp:Panel>
+            &nbsp; &nbsp;
+            <br />
+            &nbsp; &nbsp;
+            <asp:LinkButton ID="title" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Small"
+                ForeColor="Navy" Height="21px" Style="left: 32px; position: relative; top: -13px"
+                Width="96px" OnClick="title_Click">Title</asp:LinkButton><br />
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:LinkButton ID="author" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Small"
+                ForeColor="Navy" OnClick="author_Click" style="left: 12px; position: relative; top: -17px">Author</asp:LinkButton><br />
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:LinkButton ID="pub" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Small"
+                ForeColor="Navy" OnClick="pub_Click" style="left: 10px; position: relative; top: -15px">Publisher</asp:LinkButton><br />
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            <asp:LinkButton ID="shop" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Small"
+                ForeColor="Navy" style="left: -3px; position: relative; top: -13px" OnClick="shop_Click">Bookshop</asp:LinkButton></asp:Panel>
+        <asp:Panel ID="Panel6" runat="server" BackColor="AliceBlue" BorderColor="Navy" BorderStyle="Solid"
+            BorderWidth="1px" Height="511px" Width="164px" style="left: 3px; position: absolute; top: 350px">
+            <asp:Panel ID="Panel7" runat="server" BackColor="SkyBlue" Height="27px" Style="left: 1px;
+                position: relative; top: 0px" Width="161px" BorderColor="SkyBlue" BorderStyle="Solid" BorderWidth="1px">
+                &nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="Label3" runat="server" BorderColor="#000040"
+                    Font-Bold="True" Font-Names="Arial" Font-Size="Smaller" ForeColor="White" Style="left: -3px;
+                    position: relative; top: 4px" Text="Browse Category"></asp:Label></asp:Panel>
+            &nbsp;
+            <asp:DataList ID="catlist" runat="server" OnItemCommand="catlist_ItemCommand" Style="left: 16px;
+                position: absolute; top: 40px">
+                <ItemTemplate>
+                    <asp:LinkButton ID="LinkButton1" runat="server" CommandName="select" Font-Bold="True"
+                        Font-Names="Arial" Font-Size="Small" ForeColor="Navy" Text='<%# Bind("category_") %>'></asp:LinkButton>
+                </ItemTemplate>
+            </asp:DataList>
+        </asp:Panel>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+        <asp:Panel ID="Panel9" runat="server" Height="411px" Style="left: 171px; position: absolute;
+            top: 217px" Width="842px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</asp:ContentPlaceHolder>
+            &nbsp;&nbsp;&nbsp;
+        </asp:Panel>
+        &nbsp; &nbsp;
+        <br />
+    </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </form>
+</body>
+</html>
